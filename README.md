@@ -37,7 +37,7 @@ To perform action, we need to provide the action implementation like:
 
 And similarly we can have predicates:
     
-   Predicate<String> checkIfStringIsPalindrome = new Predicate<String>() {
+    Predicate<String> checkIfStringIsPalindrome = new Predicate<String>() {
         @Override
         public boolean evaluate(String input) {
             // Code here
@@ -45,7 +45,7 @@ And similarly we can have predicates:
         }
     };
     
-    These Predicates will act on the input, which can be provided along in the conditions, e.g.
+These Predicates will act on the input, which can be provided along in the conditions, e.g.
     
     .when("madam", checkIfStringIsPalindrome)
 
